@@ -9,6 +9,8 @@ class frac:
         return f"{self.bunsi}/{self.bunbo}"
     def __str__(self):
         return self.to_string()
+    def Bunsi(self):return self.bunsi
+    def Bunbo(self):return self.bunbo
     def to_double(self):
         return self.bunsi/self.bunbo
     def floor(self):
@@ -101,12 +103,4 @@ class frac:
         if type(other)==int:return self.bunsi!=other*self.bunbo
         elif type(other)==frac:return self.bunsi*other.bunbo!=self.bunbo*other.bunsi
         raise TypeError()
-    
-
-n=int(input())
-d=[]
-for i in range(n):
-    a,b=map(int,input().split())
-    d.append((frac(-a,a+b),i+1))
-d.sort()
-print(" ".join([str(i[1])for i in d]))
+        
