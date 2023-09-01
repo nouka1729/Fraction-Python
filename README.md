@@ -24,7 +24,7 @@ $\displaystyle\frac{a}{b}$ として初期化します
 
 $a$ の繰り下げ、繰り上げを int 型で返します
 
-### `a.Bunsi() , a.Bunbo() `
+### `a.bunsi , a.bunbo `
 
 $a$ の分子、分母を int 型で返します
 
