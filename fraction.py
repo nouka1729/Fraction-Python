@@ -9,8 +9,6 @@ class frac:
         return f"{self.bunsi}/{self.bunbo}"
     def __str__(self):
         return self.to_string()
-    def Bunsi(self):return self.bunsi
-    def Bunbo(self):return self.bunbo
     def to_double(self):
         return self.bunsi/self.bunbo
     def floor(self):
